@@ -1,17 +1,23 @@
 package com.company;
 
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
-      long a = 999999999999999L;
-      float b = 5.2f;
-      char c = 'v';
-        System.out.println(a);
-       int m = (int) a;
-        System.out.println(m);
+
+        int  triunghi;
+        triunghi = ShapeController.getPerimetruTriunghi(2,2,2);
+        System.out.println(triunghi);
+        int dreptunghi;
+        dreptunghi =ShapeController.getPerimetruDreptunghi(5, 8);
+        System.out.println(dreptunghi);
+        Triangle myTriangle = new Triangle();
+        ShapeController.incrementByTriunghi( myTriangle,1,1,1);
+        Rectangle myRectangle = new Rectangle();
+        ShapeController.incrementByDreptunghi(myRectangle, 1, 1);
 
     }
-}
-
-
+    }
